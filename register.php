@@ -12,7 +12,13 @@ function getCity(val){
 	});
 }
 </script>
+<script type="text/javascript">
+jQuery(function(){
+    jQuery(".mask").mask("(999) 999-9999");
+});
+</script>
 
+	<!--<script src="js/validatephone.js"></script>-->
 <body>
 <div class="wrapper">
 <div class="content">
@@ -96,6 +102,7 @@ if(isset($_POST['submit'])){
 
 		<label>Имя:</label><input class="form-control" type="text" id="name" name="name" placeholder="surname" required>
 		<label>Фамилия:</label><input class="form-control" type="text" id="surname" name="surname" placeholder="surname" required>
+                <label>Телефон:</label><input class="form-control" type="text" id="phone" class="mask" name="phone" placeholder="phone" required>
 		<label>Email:</label><input class="form-control" type="text" id="email" name="email" placeholder="Email" required>
 		<label>Пароль:</label><input class = "form-control" id="password" type="password" name="password" placeholder="Пароль" required>
 		<label>Повторный пароль:</label><input class = "form-control" type="password" name="repeat" placeholder="Повторный пароль" required >
