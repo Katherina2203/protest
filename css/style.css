@@ -1,44 +1,37 @@
-body {
-    padding-top: 75px;
-    padding-bottom: 40px;
+body {padding-top: 65px; padding-bottom: 40px;}
+h2{
+    text-align: center;
+   /* color: #017572;*/
 }
-.wrapper{border-top: 1px solid #ccc;border-bottom: 1px solid #ccc;}
+.wrapper{}
 .content{
-	width: 1100px; 
-	margin: 0 auto; 
-	height: auto;
-	min-height: 100%;
+    width: 1170px; 
+    margin: 0 auto; 
+    min-height: 100%;
+    border-top: 1px solid #ccc;border-bottom: 1px solid #ccc;
+    padding-bottom: 20px;
 }
 .header{
-	border-bottom: 1px solid #f7f7f7;
-	margin-bottom: 15px;
+   
+  /*  margin-bottom: 15px;*/
 }  
-.header .btn{max-width: 120px}  
 .menu{padding: 15px;width: 90%;}
 .menu a{font-size: 14px; font-weight: 600}   
 .menu a+a{margin-left: 20px;}
-.auth{float:right;display:block; position:absolute; top:0;}
-.container .form-signin {
+.auth{float:right;}
+.form-signin {
     max-width: 330px;
     padding: 15px;
     margin: 0 auto;
-    color: #017572;
+  /*  color: #017572;*/
 }
 
 .form-register{
-	/*max-width:700px;*/
-	padding: 15px;
+    padding: 15px;
     margin: 0 auto;
-    color: #017572;
-
+  /*  color: #017572;*/
 }  
-.btn-block{width: auto; display: inline-block;margin: 7px;}
-.container{
-
-}
-.location{
-	float:right;
-}
+.location{float:left;}
 .success{
    width: 400px;
    border: 1px solid #D8D8D8;
@@ -77,27 +70,11 @@ body {
     box-sizing: border-box;
     padding: 10px;
     font-size: 16px;
-	width:auto;
+  /*  width:auto;*/
 }
          
 .form-signin .form-control:focus, .form-register .form-control:focus {z-index: 2; }
-         
-.form-signin input[type="password"],  .form-register input[type="password"]{
-    margin-bottom: 10px;
-    border-top-left-radius: 0;
-    border-top-right-radius: 0;
-    border-color:#017572;
-	-moz-transition: padding .25s;
-	-webkit-transition: padding .25s;
-	-o-transition: padding .25s;
-	transition: padding .25s;
-}
-/*.form-signin input:required {color:red;}*/
 
-h2{
-    text-align: center;
-    color: #017572;
-}
 
 .required_notification {
 	color:#d45252;
@@ -118,7 +95,7 @@ h2{
 }
 
 .form_hint::before {
-	content: "\25C0"; /* треугольник, указующий влево, в  escaped unicode */
+	content: "\25C0"; 
 	color:#d45252;
 	position: absolute;
 	top:1px;
