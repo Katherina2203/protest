@@ -30,6 +30,45 @@ asort($capitals);
 <div id="test"></div>
 
 
+ <p id="severalEvents">Проверка нескольких событий на одном элементе</p>
+
+<script>
+    const sE = document.getElementById('severalEvents');
+    sE.addEventListener('click', function(e){
+        setTimeout(function(){
+          
+             console.log('clicked');
+             sE.style.backgroundColor='red';
+        });
+    });
+    sE.addEventListener('click', function(e){
+        const element = e.target;
+       console.log('another');
+       element.style.background='blue';
+    });
+   
+    
+</script>
+
+
+ <p id="severalEvents2">Cобытий на одном элементе</p>
+
+ <script>
+   
+    document.getElementById('severalEvents2').addEventListener('click', function(e){
+        const element = e.target;
+        console.log(e.pageX, e.pageY);
+     
+       if(element.style.background === 'aqua'){
+           element.style.background = ''
+       }else{
+           element.style.background = 'aqua'
+       }
+    });
+   
+    
+</script>
+
 
 </body>
 </html>
