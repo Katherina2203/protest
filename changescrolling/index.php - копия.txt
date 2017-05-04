@@ -1,0 +1,4 @@
+<?php
+$capitals = array("US" => "Washington", "UK" => "London", "Austria" => "Vienna");
+$result =  asort($capitals);
+echo $result;

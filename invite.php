@@ -7,7 +7,7 @@
     <div class = "content">
         <h2>Добавить инвайт</h2> 
             <?php
-            include_once 'include/dbconnect.php';
+            include_once 'include/db.php';
             $msg = '';
             
             if (isset($_POST['submit'])){
