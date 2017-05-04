@@ -70,32 +70,24 @@ asort($capitals);
 </script>
 
 
-<p>Некоторый текст, и ссылка на <a href="https://google.com" id="links">гугл</a></p>
-<script>
-    const links = document.getElementById('link');
-    
-    
-    const handler = event => {
-        console.log(event.target.textContent);
-        event.preventDefault();
-    }
-    links.addEventListener('click', handler);
-</script>
 
-//show the text li after click 
+
+
 <ul class="sortable">
-    <li>first</li>
+    <li>first <mark>Ilove</mark></li>
     <li>second</li>
     <li>third</li>
     <li>forth</li>
 </ul>
 <script>
-
+//show the text li after click 
 const lists = document.querySelector('ul.sortable');
     
     lists.addEventListener('click', e=> {
-        const target = e.target;
-        if(target.tagName === 'LI'){
+        const target = e.target,
+        parent = target.closest('li');
+        
+        if(target.tagName === 'LI' || parent){
             console.log(target.textContent);
         }
     });</script>
