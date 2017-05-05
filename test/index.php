@@ -91,5 +91,68 @@ const lists = document.querySelector('ul.sortable');
             console.log(parent ? parent.textContent : target.textContent);
         }
     });</script>
+
+<div class="accordion-test">
+<p>Accordion:</p>
+<ul class="accordion">
+    <li>First
+        <ul>
+            <li>1.1</li>
+            <li>1.2</li>
+            <li>1.3</li>
+        </ul>
+    </li>
+    <li>Second
+        <ul>
+            <li>2.1</li>
+            <li>2.2</li>
+            <li>2.3</li>
+        </ul>
+    </li>
+    <li>Third
+        <ul>
+            <li>3.1</li>
+            <li>3.2</li>
+            <li>3.3</li>
+        </ul>
+    </li>
+    <li>Forth
+        <ul>
+            <li>4.1</li>
+            <li>4.2</li>
+            <li>4.3</li>
+        </ul>
+    </li>
+</ul>
+<script>
+    //accordion
+    (function(){
+    const list = document.querySelector('.accordion'),
+          activeClass = 'active';
+    let currentActiveElement;
+    
+    if(!list){
+        throw new Error('There is no such element');
+    }
+    
+    list.addEventListener('click', (event) => {
+        const target = event.target;
+        
+        if(target.tagName !== 'LI'){
+            return ;
+        }
+       // const activeElement = list.querySelector('.' + activeClass);
+        
+        if(currentActiveElement){
+            currentActiveElement.classList.remove(activeClass);
+        }
+       
+        
+        target.classList.add(activeClass);
+        currentActiveElement = target;
+    });
+    })();
+</script>
+</div>
 </body>
 </html>
