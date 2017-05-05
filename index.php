@@ -7,18 +7,21 @@
 </head>
 <body>
 <div class="wrapper">
-  <div class="content">
-    <h2>Регистрация</h2>
+    <div class="content">
+        <div class="header">
+            <a href="login.php">sing in</a> | <a href="register.php">register</a>
+        </div>
+      
+        <div class="content-box">
+            <h2>Main page</h2>
+            <div class="slideshow">
+            </div>
+        </div>
+   
 
 
     <center class="col-md-6">
-        <form class="form-register" method="post" action="register.php">
-            <label>Имя:</label><input class="form-control" type="text" id="name" name="name" placeholder="name" required>
-            <label>Email:</label><input class="form-control" type="text" id="email" name="email" placeholder="Email" required>
-            <label>Пароль:</label><input class = "form-control" id="password" type="password" name="password" placeholder="Пароль" required>
-            <label>Повторный пароль:</label><input class = "form-control" id="cpassword" type="password" name="cpassword" placeholder="Повторный пароль" required >
-            <button class = "btn btn-primary btn-md btn-submit" type="button" name="register" id="register" data-tooltip="status-close">Зарегистрироваться</button>
-        </form>
+       
     </center>
 
   </div>

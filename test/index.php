@@ -88,7 +88,7 @@ const lists = document.querySelector('ul.sortable');
         parent = target.closest('li');
         
         if(target.tagName === 'LI' || parent){
-            console.log(target.textContent);
+            console.log(parent ? parent.textContent : target.textContent);
         }
     });</script>
 </body>
