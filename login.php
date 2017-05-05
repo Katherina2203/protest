@@ -8,25 +8,6 @@
 
     <?php
     session_start();
-    include_once 'include/dbconnect.php';
-
-        if(isset($_POST['signin'])){
-            $login =  $_POST['login'];
-            $password = $_POST['password'];
-
-         //   $sql = $conn->prepare("SELECT * FROM users WHERE login = '$login'");
-        //    $sql->execute();
-         //   $count = $sql->fetchColumn();
-
-           /*     if($count['password'] == $password){
-                    echo $msg = "<center><h4 class = 'form-signin-heading'><div class='success'>Вы успешно залогинены!<div></h4></center>";
-
-                    $_SESSION['login_user'] = $login;
-                    header("location: home.php");
-                } else {
-                     echo $msg = "<center><h4 class = 'form-signin-heading'><div class='error'>Логин или пароль введены неверно. Повторите попытку</div></h4></center>";
-                }*/
-        }
     ?>
 
 <?php
@@ -37,7 +18,7 @@ include_once 'include/db.php';
             $db->connect();
          //   echo $db->select('us', 'pass = bek7b7');
         ?>
-
+   
 	  
     <form class = "form-signin" action = "login.php" method = "post">
                 <center><input type = "text" class = "form-control" name = "login" placeholder = "Введите логин" required autofocus></br>
@@ -45,7 +26,7 @@ include_once 'include/db.php';
                 <button class = "btn btn-primary btn-md" type = "submit" name = "signin">
                         <span class="glyphicon glyphicon-log-in"></span>&nbsp; Login
                         </button><br/>
-                               или <a href="register.php">зарегистрироваться</a>
+                               или <a name="register" id="register" href="register.php">зарегистрироваться</a>
                 </center>
     </form>
 
