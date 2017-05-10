@@ -1,4 +1,4 @@
-body {padding-top: 65px; padding-bottom: 40px;}
+body {padding-top: 65px; padding-bottom: 40px; background: red;}
 h2{
     text-align: center;
    /* color: #017572;*/
@@ -121,3 +121,7 @@ input #phone::-webkit-input-placeholder{
 }
 
 .container a{text-align: right;margin-left: 15px}
+
+
+
+
